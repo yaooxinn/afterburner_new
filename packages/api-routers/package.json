@@ -1,0 +1,25 @@
+{
+  "name": "@afterburner/api-routers",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build:vite && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:vite": "vite build",
+    "dev": "vite",
+    "docs": "typedoc --out docs src",
+    "preview": "vite preview",
+    "start": "PORT=3010 node ./dist/index.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "typedoc": "^0.25.7",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-plugin-node": "^3.1.0",
+    "vitest": "^1.2.2"
+  }
+}
